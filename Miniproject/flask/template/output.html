@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Output Page</title>
+    <style>
+        body {
+            background-image: url("https://vidhilegalpolicy.in/wp-content/uploads/2021/10/mental-health-wellness-during-covid-19.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            margin: 0; /* Remove default margin to ensure full coverage */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .result-box {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border: 2px solid #007bff; /* Blue border */
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #007bff; /* Blue text color for the header */
+        }
+
+        p {
+            color: #333; /* Dark text color for the prediction result */
+        }
+
+        a {
+            color: #007bff; /* Blue text color for the link */
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h1>Model Prediction Result</h1>
+        <p>{{ y }}</p>
+        <a href="/">Go back to the home page</a>
+    </div>
+</body>
+</html>

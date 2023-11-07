@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Index Page</title>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url("https://healthwaymedical.com/wp-content/uploads/2020/09/mental-health-and-heart1.jpg");
+            background-size: cover; /* This ensures the background image covers the entire page */
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* This keeps the background fixed while scrolling */
+            background-position: center center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+        <div  class="background-image">
+
+                <form action="/out" method="POST" enctype="multipart/form-data">
+                    <div class="m-5 text-center">
+                        <label for="age">Age:</label>
+                        <input type="text" name="age" id="age" required /><br><br>
+                        
+                        <label for="gender">Gender:</label>
+                        <input type="text" name="gender" id="gender" required /><br>
+                    </div>
+                    
+                    <div class="pl-5">
+                        <label for="self_employed">Are you self-employed?</label><br />
+                    <select id="self_employed" name="self_employed">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br><br/>
+                    <label for="family_history">Do you have Family History?</label><br />
+                    <select id="family_history" name="family_history">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <br /><br/>
+
+                    <label for="work_interfere">How does work interfere with your mental health?</label><br />
+                    <select id="work_interfere" name="work_interfere">
+                        <option value="Often">Often</option>
+                        <option value="Sometimes">Sometimes</option>
+                        <option value="Rarely">Rarely</option>
+                        <option value="Never">Never</option>
+                    </select><br><br/>
+                    <label for="no_employees">Number of Employees:</label><br />
+                    <select id="no_employees" name="no_employees">
+                        <option value="1-5">1-5</option>
+                        <option value="6-25">6-25</option>
+                        <option value="26-100">26-100</option>
+                        <option value="100-500">100-500</option>
+
+                    </select><br><br/>
+                    <label for="remote_work">Do you have the option to work remotely?</label><br />
+                    <select id="remote_work" name="remote_work">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br><br/>
+                    <label for="tech_company">Is your company a tech company?</label><br />
+                    <select id="tech_company" name="tech_company">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br><br/>
+                    <label for="benefits">Does your company offer mental health benefits?</label><br />
+                    <select id="benefits" name="benefits">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br><br/>
+                    <label for="care_options">Are you offered care options by your company?</label><br />
+                    <select id="care_options" name="care_options">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br><br/>
+                    <label for="seek_help">Are you willing to seek help for mental health issues?</label><br />
+                    <select id="seek_help" name="seek_help">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br><br/>
+                    <label for="anonymity">Can you be anonymous when seeking help for mental health issues?</label><br />
+                    <select id="anonymity" name="anonymity">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br><br/>
+                    <label for="leave">How easy is it for you to take medical leave for mental health?</label><br />
+                    <select id="leave" name="leave">
+                        <option value="Very easy">Very easy</option>
+                        <option value="Somewhat easy">Somewhat easy</option>
+                        <option value="Don't know">Don't know</option>
+                        <option value="Very difficult">Very difficult</option>
+                    </select><br><br/>
+                    <label for="mental_health_consequence">Do you think discussing a mental health issue would have negative consequences for your career?</label><br />
+                    <select id="mental_health_consequence" name="mental_health_consequence">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br><br/>
+                    <label for="phys_health_consequence">Do you think discussing a physical health issue would have negative consequences for your career?</label><br />
+                    <select id="phys_health_consequence" name="phys_health_consequence">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br><br/>
+                    <label for="coworkers">Would you be willing to discuss a mental health issue with your coworkers?</label><br />
+                    <select id="coworkers" name="coworkers">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br><br/>
+                    <label for="supervisor">Would you be willing to discuss a mental health issue with your direct supervisor(s)?</label><br />
+                    <select id="supervisor" name="supervisor">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br><br/>
+
+                    <label for="wellness_program">Does your company offer a wellness program?</label><br />
+                    <select id="wellness_program" name="wellness_program">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br><br/>
+                    <label for="mental_health_interview">Would you bring up a mental health issue with a potential employer in an interview?</label><br />
+                    <select id="mental_health_interview" name="mental_health_interview">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br><br/>
+                    <label for="phys_health_interview">Would you bring up a physical health issue with a potential employer in an interview?</label><br />
+                    <select id="phys_health_interview" name="phys_health_interview">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br><br/>
+                    <label for="mental_vs_physical">Do you feel that your employer takes mental health as seriously as physical health?</label><br />
+                    <select id="mental_vs_physical" name="mental_vs_physical">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br><br/>
+                    <label for="obs_consequence">Have you observed any negative consequences for discussing a mental health issue in your workplace?</label><br />
+                    <select id="obs_consequence" name="obs_consequence">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select><br><br/>
+                    </div>
+
+
+
+                <div class="text-center">
+                <button class="btn btn-primary" type="submit">Predict</button>
+                </div>
+                     </form>
+                </div>
+
+
+</body>
+
+</html>

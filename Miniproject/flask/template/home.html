@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <style>
+        body {
+            background-image: url("https://healthcare.utah.edu/sites/g/files/zrelqx136/files/media/images/2023/GettyImages-1446012687-mental%20health.jpg");
+            background-size: cover; /* This ensures the background image covers the entire page */
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* This keeps the background fixed while scrolling */
+            background-position: center center;
+        }
+
+        h1, p {
+            color: black; /* Set the text color to white for better visibility on the background */
+        }
+
+        /* Center the content vertically and horizontally */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* height: 100vh; This makes the body take up the full viewport height */
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff; /* Blue button background color */
+            color: white; /* Button text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Mental Health Prediction</h1>
+    <p>Click the "Proceed" button to continue.</p>
+    <form action="/pred" method="GET" enctype="multipart/form-data">
+        <button type="submit">Proceed</button>
+    </form>
+</body>
+</html>
